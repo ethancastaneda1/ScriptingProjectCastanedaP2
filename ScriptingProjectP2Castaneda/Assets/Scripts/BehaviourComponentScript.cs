@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -18,17 +19,28 @@ public class BehaviourComponentScript : MonoBehaviour
         {
             GetComponent<Renderer>().material.color = Color.red;
         }
-        if(Input.GetKeyDown(KeyCode.G))
-      GetComponent<Renderer>().material.color = Color.green;
-
-        if(Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.G))
         {
+            GetComponent<Renderer>().material.color = Color.green;
+        }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            GetComponent<Renderer>().material.color = Color.magenta;
 
+        }
+        if (Input.GetKeyDown(KeyCode.B))
+        {
             GetComponent<Renderer>().material.color = Color.blue;
         }
-    }   if (Input.GetKeyDown(KeyCode.P))
-}
-        {  
-          GetComponent<Renderer>().matirial.color = Color.purple;
-        }        
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            GetComponent<Renderer>().material.color = Color.yellow;
+        }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            GetComponent<Renderer>().material.color = Color.black;
+        }
+    }
 
+
+}
